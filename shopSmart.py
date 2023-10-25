@@ -34,7 +34,7 @@ def shopSmart(orderList, fruitShops):
     
     for fruit_shop in fruitShops:
         shop_price_dic[fruit_shop]=fruit_shop.getPriceOfOrder(orderList)
-    # assends in increasing order total price of orderList
+    # orders in increasing order of total price of orderList
     sort_dic=sorted(shop_price_dic.items(),key=get_value)
     # the best shop is, a shop having the minimum cost for ordered list
     return sort_dic[0][0]
